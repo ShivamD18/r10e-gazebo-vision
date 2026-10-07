@@ -4,9 +4,6 @@ A robust ROS 2 Python control pipeline designed to programmatically command a Un
 
 ![Project Banner / Simulation Preview](assets/demo.png)
 <!-- Drop a 10s GIF or screenshot of your robot running here -->
-<p align="center">
-  <img src="images/simulation_preview.png" width="800" alt="UR10e Simulation Workspace">
-</p>
 ---
 
 ## 🚀 Overview
