@@ -2,7 +2,7 @@
 
 A robust ROS 2 Python control pipeline designed to programmatically command a Universal Robots UR10e manipulator through multi-step industrial pick-and-place routines within a Gazebo simulation environment.
 
-![Project Banner / Simulation Preview](assets/demo.png)
+![Project Banner / Simulation Preview](assets/demo.gif)
 <!-- Drop a 10s GIF or screenshot of your robot running here -->
 ---
 
