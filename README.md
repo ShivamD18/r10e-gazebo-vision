@@ -6,7 +6,7 @@ A robust ROS 2 Python control pipeline designed to programmatically command a Un
 <!-- Drop a 10s GIF or screenshot of your robot running here -->
 ---
 
-## 🚀 Overview
+## Overview
 
 Industrial automation relies heavily on precise, repeatable trajectory execution. This project bypasses manual GUI jogging to implement a fully autonomous, code-driven control pipeline. Using ROS 2 topic communication, a custom Python node publishes time-parameterized `JointTrajectory` messages to execute smooth, multi-waypoint industrial choreography across a workstation environment.
 
@@ -17,7 +17,7 @@ Industrial automation relies heavily on precise, repeatable trajectory execution
 * **Deterministic Timing:** Uses time-parameterized trajectory points (`time_from_start`) for safe, controlled manipulator motion.
 * **Gazebo & RViz Integration:** Validated in a physics-enabled simulation environment with custom workstation geometry.
 
-## 🧰 Tech Stack
+## Tech Stack
 
 * **Middleware:** ROS 2 (Humble / Iron / Jazzy)
 * **Simulation:** Gazebo (Ignition / GZ) & `ur_simulation_gz`
@@ -26,7 +26,7 @@ Industrial automation relies heavily on precise, repeatable trajectory execution
 
 ---
 
-## ⚙️ Getting Started & Installation
+## Getting Started & Installation
 
 ### Prerequisites
 
@@ -65,7 +65,7 @@ python3 ~/ur_ws/src/ur10e_vision_control/ur10e_vision_control/waypoint_commander
 
 ---
 
-## 📐 Architecture & Control Flow
+## Architecture & Control Flow
 
 The control script initializes a ROS 2 node that publishes to the `/joint_trajectory_controller/joint_trajectory` topic.
 
@@ -84,13 +84,13 @@ The control script initializes a ROS 2 node that publishes to the `/joint_trajec
 
 Each waypoint specifies target angles for all 6 joints (`shoulder_pan`, `shoulder_lift`, `elbow`, `wrist_1`, `wrist_2`, `wrist_3`) paired with a cumulative timestamp so the controller can interpolate smoothly.
 
-## 🎯 Future Enhancements
+## Future Enhancements
 
 * Integrate MoveIt 2 for collision-aware motion planning.
 * Add a simulated parallel-jaw gripper actuation service.
 * Implement sensor feedback for closed-loop quality verification.
 
-## 👤 Author
+## Author
 
 **Shivam Dave**
 Mechatronics Engineering | Toronto Metropolitan University
